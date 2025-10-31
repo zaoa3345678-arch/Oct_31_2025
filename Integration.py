@@ -6,7 +6,7 @@ import sqlite3
 # basic GUI 
 root = tk.Tk()
 root.title('INTEGRATION')
-root.geometry('300x350')
+root.geometry('300x400')
 
 # new label and inpu
 # student ID label and entry
@@ -64,6 +64,7 @@ def overview_student():
 botton_overview = tk.Button(root, text='Overview', command=overview_student)
 botton_overview.pack(pady=25)
 
-print ('hello software')
+def delete_student():
+    
 
 root.mainloop() #must be put to the end of programming code
