@@ -69,7 +69,7 @@ def delete_student():
     cursor.execute('SELECT * from DB_student where db_student_id = ?',(student_id,))
     delete = cursor.fetchall()
     cursor.execute('DELETE from DB_student where db_student_id = ?',(student_id,))
-    print ('Following row is delete:', delete)
+    print ('Following rows are delete:', delete)
     conn.commit()
-    
+
 root.mainloop() #must be put to the end of programming code
